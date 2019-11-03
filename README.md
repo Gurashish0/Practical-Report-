@@ -458,3 +458,336 @@
 
 `Enter the number of terms :9`  
 `Fibonacci Series        0  1  1  2  3  5  8  13  21`   
+
+# PROGRAM NO 17 : PROGRAM TO ENTER AND PRINT ELEMENTS USING 1-D ARRAY 
+
+`#include <stdio.h>`  
+`int main ()`  
+`{`  
+`int values [10],i;`  
+`for (i=0;i<10;i++)`  
+`{`  
+`printf ("Enter [%d] :",i);`  
+`scanf ("%d",&values[i]);`  
+`}`  
+`printf ("\n Printing elements of the array : \n");`  
+`for (i=0;i<10;i++)`  
+`{`  
+`printf ("%d\n",values[i]);`  
+`}`  
+`return 0;`  
+`}`  
+         
+## OUTPUT
+
+`Enter [0] :12`  
+`Enter [1] :33`  
+`Enter [2] :54`  
+`Enter [3] :76`  
+`Enter [4] :123`  
+`Enter [5] :33`  
+`Enter [6] :98`  
+`Enter [7] :45`  
+`Enter [8] :66`  
+`Enter [9] :75`  
+  
+` Printing elements of the array :` 
+`12`
+`33`
+`54`
+`76`
+`123`
+`33`
+`98`
+`45`
+`66`
+`75`
+
+
+# PROGRAM NO 18:-PROGRAM TO PRINT A MATRIX
+
+`#include <stdio.h>`  
+`int main ()`  
+`{`  
+`int i,j,m,n;`  
+`int matrix[10][20];`  
+`printf ("Enter the number of rows:");`  
+`scanf ("%d",&m);`  
+`printf ("Enter the number of columns:");`  
+`scanf ("%d",&n);`  
+ 
+`for (i=0;i<m;i++)`  
+`{ `  
+`for (j=0;j<n;j++)`  
+ `{`  
+`printf ("Enter data in [%d][%d]:",i,j);`  
+`scanf ("%d",&matrix [i][j]);`  
+     `}`  
+`}`  
+
+`for (i=0;i<m;i++)`  
+` {`  
+ ` for (j=0;j<n;j++)`  
+   ` { printf ("%d\t",matrix[i][j]);`  
+     
+   ` }`  
+`printf  ("\n");`  
+`}`  
+`return 0;`  
+`}`  
+
+## OUTPUT
+
+`Enter the number of rows:2`  
+`Enter the number of columns:2`  
+`Enter data in [0][0]:12`  
+`Enter data in [0][1]:34`  
+`Enter data in [1][0]:65`  
+`Enter data in [1][1]:77`  
+`12      34`  
+`65      77`  
+
+# PROGRAM NO 19:-PROGRAM TO ADD TWO MATRIX
+
+`#include <stdio.h>`  
+`int main ()`  
+`{`  
+`int i,j,a[10][10],b[10][10],sum[10][10],m,n;  `
+`printf ("Enter the number of Rows\n Enter the number of Columns:");`  
+`scanf ("%d %d",&m,&n);`  
+`for (i=0;i<m;i++)`  
+`{`  
+`for (j=0;j<n;j++)`  
+`{`  
+`printf ("Enter value of first matrix (%d %d) : ",i,j);`  
+`scanf ("%d",&a[i][j]);`  
+`}`  
+`  }`  
+`for (i=0;i<m;i++)`  
+`{`  
+`for (j=0;j<n;j++) `      
+`{`  
+`printf ("Enter value of second matrix (%d %d) : ",i,j);`  
+`scanf ("%d",&b[i][j]);`  
+`}`  
+ ` }`  
+`printf ("Sum of entered matrices :\n");`  
+`for (i=0;i<m;i++)`  
+`{`  
+`for(j=0;j<n;j++)`  
+`{`  
+`sum [i][j]=a[i][j] + b[i][j];`  
+`printf ("%d\t",sum [i][j]);`  
+`}`  
+`printf ("\n");`  
+`}`  
+`return 0;`  
+`} `  
+
+## OUTPUT 
+
+`Enter the number of Rows`  
+` Enter the number of Columns:2 2 `  
+`Enter value of first matrix (0 0) : 12`  
+`Enter value of first matrix (0 1) : 66`  
+`Enter value of first matrix (1 0) : 34`  
+`Enter value of first matrix (1 1) : 25`  
+`Enter value of second matrix (0 0) : 22`  
+`Enter value of second matrix (0 1) : 34`  
+`Enter value of second matrix (1 0) : 97`  
+`Enter value of second matrix (1 1) : 4`  
+`Sum of entered matrices :`  
+`34      100`  
+`131     29`  
+
+# PROGRAM NO 20:-PROGRAM TO TRANSPOSE A MATRIX
+
+`#include <stdio.h>`  
+ 
+`void main()`  
+`{`  
+   ` static int array[10][10];`  
+    `int i, j, m, n;`  
+ 
+   ` printf("Enter the order of the matrix \n");`  
+    `scanf("%d %d", &m, &n);`  
+   ` printf("Enter the coefiicients of the matrix\n");`  
+    `for (i = 0; i < m; ++i)`  
+   ` {`  
+      `  for (j = 0; j < n; ++j)`  
+       ` {`  
+           ` scanf("%d", &array[i][j]);`  
+        `}`  
+   ` }`  
+   ` printf("The given matrix is \n");`  
+   ` for (i = 0; i < m; ++i)`  
+   ` {`  
+        `for (j = 0; j < n; ++j)`  
+      `  {`  
+           ` printf(" %d", array[i][j]);`  
+      `  }`  
+        `printf("\n");`  
+   ` }  
+   ` printf("Transpose of matrix is \n");  `
+    `for (j = 0; j < n; ++j)`  
+    `{`  
+      `  for (i = 0; i < m; ++i)`  
+       ` {`    
+           ` printf(" %d", array[i][j]);`    
+     `   }`    
+       ` printf("\n");`    
+   ` }`    
+`}`    
+
+## OUTPUT
+
+`Enter the order of the matrix`  
+`3 3`  
+`Enter the coefiicients of the matrix`  
+`3 7 9`  
+`2 7 5`  
+`6 3 4`  
+`The given matrix is`  
+` 3 7 9`  
+` 2 7 5`  
+` 6 3 4`  
+`Transpose of matrix is`  
+ `3 2 6`  
+ `7 7 3`  
+` 9 5 4`  
+
+# PROGRAM NO 21:-PROGRAM TO SUBTRACT TWO MATRIX
+
+`#include <stdio.h>`  
+`int main ()`  
+`{`  
+`int i,j,a[10][10],b[10][10],minus[10][10],m,n;`  
+`printf("Enter the number of Rows :");`  
+`scanf ("%d",&m);`  
+`printf ("Enter the number of columns :");`  
+`scanf ("%d",&n);`  
+`for (i=0 ; i<m ; i++)`  
+`{`  
+`for (j=0 ; j<n ;j++)`  
+`{`  
+`printf("Enter value of first matrix(%d %d) : ",i,j);`  
+`scanf ("%d",&a[i][j]);`  
+`}`  
+  `}`  
+`for(i=0;i<m;i++)`        
+`{`  
+`for (j=0;j<n;j++)`  
+`{`  
+`printf ("Enter value of second matrix (%d %d) : ",i,j);`  
+`scanf ("%d",&b[i][j]);`  
+`}`  
+  `}`  
+`for (i=0;i<m;i++)`  
+`{`  
+`for (j=0;j<n;j++)`  
+`{`  
+`minus [i][j] = a[i][j] - b[i][j] ;`  
+`printf ("%d\t",minus[i][j] );`  
+`}`  
+`printf ("\n");`  
+`}`  
+`return 0;`  
+
+## OUTPUT
+
+`Enter the number of Rows :2`  
+`Enter the number of columns :2`  
+`Enter value of first matrix(0 0) : 143`  
+`Enter value of first matrix(0 1) : 32`  
+`Enter value of first matrix(1 0) : 56`  
+`Enter value of first matrix(1 1) : 78`  
+`Enter value of second matrix (0 0) : 22`  
+`Enter value of second matrix (0 1) : 9 `  
+`Enter value of second matrix (1 0) : 19`  
+`Enter value of second matrix (1 1) : 56`  
+`121     23`  
+`37      22`  
+
+# PROGRAM NO 22:- PROGRAM TO MULTIPLY TWO MATRIX  
+
+`#include<stdio.h>`  
+`void main()`  
+`{`  
+   ` int a[10][10],b[10][10],c[10][10],i,j,k,r1,c1,r2,c2;`  
+    `int sum=0;`  
+   ` printf("Enter number of rows and columns of first matrix (MAX 10)\n");`  
+   ` scanf("%d%d",&r1,&c1);`  
+    `printf("Enter number of rows and columns of second matrix MAX 10)\n");`  
+    `scanf("%d%d",&r2,&c2);`  
+    `if(r2==c1)``  
+    `{`  
+ 
+        `printf("\n Enter First Matrix:");`  
+        `for(i=0; i<r1; i++)`  
+        `{`  
+            `for(j=0; j<c1; j++)`  
+              `  scanf("%d",&a[i][j]);`  
+        `}`  
+        `printf("\n Enter Second Matrix: ");`  
+       ` for(i=0; i<r2; i++)`  
+        `{`  
+           ` for(j=0; j<c2; j++)`  
+              `  scanf("%d",&b[i][j]);`  
+       ` }`  
+        `printf("The First Matrix Is: \n");`  
+       ` for(i=0; i<r1; i++)`  
+        `{`  
+           ` for(j=0; j<c1; j++)`  
+              `  printf(" %d ",a[i][j]);`  
+            `printf("\n");`  
+       ` }`  
+       ` printf("The Second Matrix Is:\n");`  
+      `  for(i=0; i<r2; i++)`  
+      `  {`  
+          `  for(j=0; j<c2; j++)`  
+              `  printf(" %d ",b[i][j]);`  
+           ` printf("\n");`  
+        `}`  
+       ` printf("Multiplication of the Matrices:\n");`  
+      `  for(i=0; i<r1; i++)`  
+       ` {`  
+          `  for(j=0; j<c2; j++)`  
+           ` {`  
+              `  c[i][j]=0;`  
+                `for(k=0; k<r1; k++)`  
+                    `c[i][j]+=a[i][k]*b[k][j];`  
+                `printf("%d  ",c[i][j]);`  
+           ` }`  
+           ` printf("\n");`  
+       ` }`  
+ 
+   ` }`   
+   ` else`  
+   ` {`  
+   `     printf("Matrix Multiplication is Not Possible");`  
+    `}`  
+`}`  
+
+## OUTPUT 
+
+`Enter number of rows and columns of first matrix (MAX 10)`  
+`3`  
+`3`  
+`Enter number of rows and columns of second matrix MAX 10)`  
+`3`  
+`3`  
+ 
+ `Enter First Matrix:2 2 2 2 2 2 2 2 2`  
+ `Enter Second Matrix: 3 3 3 3 3 3 3 3 3`  
+`The First Matrix Is:`  
+ `2  2  2`  
+` 2  2  2`  
+ `2  2  2`  
+`The Second Matrix Is:`  
+ `3  3  3`  
+ `3  3  3`  
+` 3  3  3`  
+`Multiplication of the Matrices:`  
+`18  18  18`  
+`18  18  18`  
+`18  18  18`  
