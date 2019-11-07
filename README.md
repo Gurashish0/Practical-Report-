@@ -791,3 +791,85 @@
 `18  18  18`  
 `18  18  18`  
 `18  18  18`  
+
+
+# PROGRAM NO 23:-PROGRAM TO SQUARE A NUMBER USING FUNCTIONS
+
+`#include <stdio.h>`  
+`int square (int num1);`  
+`int main ()`  
+`{`  
+  ` int a;`  
+   ` printf ("Enter the number :");`  
+    `scanf ("%d",&a);`  
+    `square (a);`  
+`}`  
+`int square (int num1)`  
+`{`  
+`int b;`  
+`b=num1*num1;`  
+`printf ("Square number is : %d\n",b);`  
+`return 0;`  
+`}`  
+  
+## OUTPUT
+
+`Enter the number :20`  
+`Square number is : 400`  
+
+# PROGRAM NO 24:-PROGRAM TO SWAP A NUMBER BY CALLING FUNCTION BY VALUE
+
+`#include <stdio.h>`    
+`int swapcbv(int num1,int num2);`    
+`int main ()`    
+`{`    
+`int a,b;`    
+`printf ("Enter the first integer:");`    
+`scanf ("%d",&a);`    
+`printf ("Enter the second integer:");`    
+`scanf("%d",&b);`    
+`printf ("\n Before Calling the Function");`    
+`printf("Value of a=%d, Value of b =%d",a,b );`     
+`swapcbv(a,b);`    
+`printf ("\nAfter Calling the Function");`    
+`printf("Value of a=%d,Value of b=%d",a,b);`    
+`return 0;`    
+`}`    
+
+## OUTPUT
+
+
+`Enter the first integer:23`  
+`Enter the second integer:45`  
+
+` Before Calling the FunctionValue of a=23, Value of b =45`  
+`After Calling the FunctionValue of a=23,Value of b=45`  
+
+
+# PROGRAM NO 25:-PROGRAM TO SWAP TWO NUMBERS BY CALLING FUNCTION BY REFRENCE
+
+`#include <stdio.h>`  
+`int swapcbr (int *num1, int *num2);`  
+`int main ()`  
+`{`  
+`int a,b;` 
+`printf ("Enter first Integer:");`  
+`scanf ("%d",&a);`                                            
+`printf ("Enter second Integer:"); `                              
+`scanf ("%d",&b); `                                               
+`printf ("\nBefore Calling Function");`  
+`printf ("Value of a = %d, Value of b = %d", a,b); `              
+`swapcbr(&a,&b);`  
+`printf ("\nAfter Calling Function");`  
+`printf ("Value of a = %d, Value of b = %d", a,b);`  
+`return 0;`  
+`}`  
+
+## OUTPUT
+
+`Enter first Integer:100`  
+`Enter second Integer:200`  
+
+`Before Calling FunctionValue of a = 100, Value of b = 200`  
+`After Calling FunctionValue of a = 200, Value of b = 100`  
+
