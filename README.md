@@ -11,13 +11,13 @@
 
 
 # PROGRAM NO 1 : PROGRAM TO PRINT WELCOME MESSAGE 
-
- ` #include <stdio.h>`  
-   `void main ()`  
-  ` {`  
-     `puts ("Welcome Budding Engineers");`  
-   `}`  
-   
+```C
+  #include <stdio.h>  
+   void main ()  
+   {  
+     puts ("Welcome Budding Engineers");  
+   }  
+   ```
    ## OUTPUT
    
    `Welcome Budding Engineers `
