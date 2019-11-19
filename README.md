@@ -84,6 +84,7 @@ printf ("\nValue in farenheit is :%.2f\n",num2 );
 `Value in farenheit is :212.00`  
 
 # PROGRAM NO 5 : PROGRAM TO FIND AREA AND PERIMETER OF A CIRCLE
+
 ```C
 #include <stdio.h>  
 int main ()  
@@ -97,13 +98,14 @@ printf("Area of circle : %f,",area);
 printf("Perimeter of circle : %f",peri);  
 return 0;  
 }  
-
+```
 ## OUTPUT 
 
 `Enter radius of circle :5`  
 `Area of circle : 78.500000,Perimeter of circle : 31.400002`  
 
 # PROGRAM NO 6 : PROGRAM TO SWAP TWO NUMBERS WITHOUT USING THIRD VARIABLE 
+
 ```C
 #include <stdio.h>  
 int main ()  
