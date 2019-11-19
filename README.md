@@ -57,7 +57,7 @@ c = a+b;
 printf("Sum of two variables is : %d\n",c);  
 return 0;                                                      
 }  
-
+```
 ## OUTPUT 
 
 `Enter first variable : 10`  
@@ -75,7 +75,7 @@ scanf ("%f",&num1);
 num2 = (num1*9/5)+32;  
 printf ("\nValue in farenheit is :%.2f\n",num2 );  
 }  
-
+```
 ## OUTPUT
 
 `Enter value in centigrade:`  
@@ -170,7 +170,7 @@ for(a=1;a<=i;a++)
 n=n*a;  
 printf("factorial of i is %d \n",n);  
 }  
-
+```
 ## OUTPUT 
 
 `enter i : 5`  
@@ -642,7 +642,7 @@ void main()
         printf("\n");    
     }   
   }    
-
+```
 ## OUTPUT
 
 `Enter the order of the matrix`  
