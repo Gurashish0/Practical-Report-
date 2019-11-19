@@ -877,3 +877,212 @@ return 0;
 `Before Calling FunctionValue of a = 100, Value of b = 200`  
 `After Calling FunctionValue of a = 200, Value of b = 100`  
 
+# PROGRAM No 26:-PROGRAM TO FIND FACTORIAL USING RECURSION
+```C
+#include <stdio.h>
+int multiplyNumbers(int n);
+int main()
+{
+    int n;
+    printf("Enter a positive integer: ");
+    scanf("%d", &n);
+    printf("Factorial of %d = %ld", n, multiplyNumbers(n));
+    return 0;
+}
+long int multiplyNumbers(int n)
+{
+    if (n >= 1)
+        return n*multiplyNumbers(n-1);
+    else
+        return 1;
+}
+```
+
+## OUTPUT
+
+`Enter a positive integer: 6`  
+`Factorial of 6 = 720`  
+
+# PROGRAM No 27:-PROGRAM TO PRINT FIBBONACCI SERIES USING RECURSSION
+
+```C
+#include<stdio.h>
+ 
+int Fibonacci(int);
+ 
+int main()
+{
+   int n, i = 0, c;
+   printf ("Enter the number of terms : ");
+   scanf("%d",&n);
+ 
+   printf("Fibonacci series\n");
+ 
+   for ( c = 1 ; c <= n ; c++ )
+   {
+      printf("%d\n", Fibonacci(i));
+      i++; 
+   }
+ 
+   return 0;
+}
+ 
+int Fibonacci(int n)
+{
+   if ( n == 0 )
+      return 0;
+   else if ( n == 1 )
+      return 1;
+   else
+      return ( Fibonacci(n-1) + Fibonacci(n-2) );
+}
+```
+
+## OUTPUT
+
+`Enter the number of terms :9`  
+ `Fibonacci series` 
+ `0`    
+ `1 `   
+ `1  `  
+ `2  `  
+ `3  `  
+ `5  `  
+ `8  `  
+ `13  `  
+ `21`  
+  
+ # PROGRAM No 28:-PROGRAM TO DISPLAY A STUCTURE
+ ```C
+ #include <stdio.h>
+struct student
+{
+    char name[50];
+    int roll;
+    float marks;
+} s;
+int main()
+{
+    printf("Enter information:\n");
+    printf("Enter name: ");
+    scanf("%s", s.name);
+    printf("Enter roll number: ");
+    scanf("%d", &s.roll);
+    printf("Enter marks: ");
+    scanf("%f", &s.marks);
+    printf("Displaying Information:\n");
+    printf("Name: ");
+    puts(s.name);
+    printf("Roll number: %d\n",s.roll);
+    printf("Marks: %.1f\n", s.marks);
+    return 0;
+}
+```
+
+## OUTPUT
+
+`Enter information:`  
+`Enter name: Jack`  
+`Enter roll number: 23`  
+`Enter marks: 34.5`  
+`Displaying Information:`  
+`Name: Jack`  
+`Roll number: 23`  
+`Marks: 34.5`  
+
+# PROGRAM No 29:-PROGRAM TO DISPLAY ADDRESS OF A VARIABLE USING POINTERS
+```C
+#include <stdio.h>
+void main()
+{
+        int n,*p;
+        p=&n;
+        n=100;
+        printf("using variable n:\n");
+        printf("value of n:%d\n address of n %u\n",n,&n);
+        printf("using pointer n: \n");
+        printf("value of n:%d\n address of n %u\n",*p,p);
+}```
+
+## OUTPUT
+`using variable n:`  
+`value of n:100`  
+ `address of n 804324724`  
+`using pointer n:`   
+`value of n:100`  
+ `address of n 804324724`  
+ 
+# PROGRAM No 30:-PROGRAM TO PRINT ADDRESS OF A VARIABLE USING POINTERS
+```C
+#include <stdio.h>
+void main()
+{                                                                                       
+       int a[10],*p,i;
+       p=&a[0];
+       printf("enter the elements of array\n");
+       for(i=0;i<=9;i++)
+       {
+               printf("enter elements %02d:",i+1);
+               scanf("%d",p+i);
+       }
+       printf("entered elements are:\n");
+       printf("address:\t \t value\n");
+       for (i=0;i<=9;i++)
+       printf("%08x\t %03d\n",(p+i),*(p+i));
+}
+```
+
+## OUTPUT
+
+`enter the elements of array`  
+`enter elements 01:12`  
+`enter elements 02:13`  
+`enter elements 03:1615`  
+`enter elements 04:16`  
+`enter elements 05:19 `  
+`enter elements 06:18`  
+`enter elements 07:14`  
+`enter elements 08:12`  
+`enter elements 09:17`  
+`enter elements 10:16`  
+`entered elements are:`  
+`address:         value`  
+`85c17510         012`  
+`85c17514         013`  
+`85c17518         1615`  
+`85c1751c         016`  
+`85c17520         019`  
+`85c17524         018`  
+`85c17528         014`  
+`85c1752c         012`  
+`85c17530         017`  
+`85c17534         016`  
+  
+# PROGRAM No 31:-PROGRAM TO PRINT THE MULTIPLICATION TABLE OF 5
+```C
+#include <stdio.h>
+void main()
+{
+        int i;
+        int a=5;
+        printf("table of 5\n");
+        for(i=1;i<=10;i++)
+        {
+                printf(" %d * %d = %d \n",a,i,a*i);
+        }
+}
+```
+
+## OUTPUT
+
+`table of 5`  
+ `5 * 1 = 5 `  
+ `5 * 2 = 10 `  
+ `5 * 3 = 15 `  
+ `5 * 4 = 20 `  
+ `5 * 5 = 25 `  
+ `5 * 6 = 30 `  
+ `5 * 7 = 35 `  
+ `5 * 8 = 40 `  
+ `5 * 9 = 45 `  
+ `5 * 10 = 50`   
