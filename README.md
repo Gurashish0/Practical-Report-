@@ -1058,7 +1058,7 @@ void main()
 `85c17530         017`  
 `85c17534         016`  
   
-# PROGRAM No 31:-PROGRAM TO PRINT THE MULTIPLICATION TABLE OF 5
+# PROGRAM No 30:-PROGRAM TO PRINT THE MULTIPLICATION TABLE OF 5
 ```C
 #include <stdio.h>
 void main()
