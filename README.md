@@ -838,7 +838,14 @@ swapcbv(a,b);
 printf ("\nAfter Calling the Function");    
 printf("Value of a=%d,Value of b=%d",a,b);    
 return 0;    
-}    
+}  
+int swapcbv(int num1,int num2)
+{
+int c;
+c=num1;
+num1=num2;
+num2=c;
+}
 ```
 ## OUTPUT
 
@@ -867,7 +874,15 @@ swapcbr(&a,&b);
 printf ("\nAfter Calling Function");  
 printf ("Value of a = %d, Value of b = %d", a,b);  
 return 0;  
-}  
+}
+int swapcbr (int *num1,int *num2)
+{
+int c;
+c= *num1;
+*num1=*num2;
+*num2=c;
+}
+
 ```
 ## OUTPUT
 
